@@ -7,6 +7,7 @@
     <groupId>com.cesuokanc.simpleweb</groupId>
     <artifactId>simpleweb</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -14,6 +15,11 @@
         <version>2.0.2.RELEASE</version>
         <relativePath/>
     </parent>
+
+    <modules>
+        <module>logic</module>
+        <module>rest</module>
+    </modules>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -33,14 +39,5 @@
         </dependency>
     </dependencies>
 
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>
 
 </project>
